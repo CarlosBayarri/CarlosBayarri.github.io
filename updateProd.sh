@@ -2,7 +2,7 @@
 echo "Updateing repo to prod";
 read -p  "What's the commit? " commit;
 
-git checkout dev -- ./docs/*;
+sudo git checkout dev -- ./docs/*;
 echo "commit: $commit issue: $issue";
 if [ "$issue" != "" ]; then
     if [ "$condition" != "" ]; then
