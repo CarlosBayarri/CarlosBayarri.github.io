@@ -1,8 +1,11 @@
 
 echo "Updateing repo to prod";
 read -p  "What's the commit? " commit;
-git checkout master;
-git checkout dev -- ./docs/*;
+sudo git checkout master;
+sudo rm -R *;
+sudo git checkout dev -- docs;
+sudo cp -R docs/* ./;
+sudo git add --all;
 echo "commit: $commit issue: $issue";
 if [ "$issue" != "" ]; then
     if [ "$condition" != "" ]; then
