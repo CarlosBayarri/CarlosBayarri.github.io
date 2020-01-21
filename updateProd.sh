@@ -1,8 +1,8 @@
 
 echo "Updateing repo to prod";
 read -p  "What's the commit? " commit;
-
-sudo git checkout dev -- ./docs/*;
+git checkout dev;
+git checkout master -- docs/*
 echo "commit: $commit issue: $issue";
 if [ "$issue" != "" ]; then
     if [ "$condition" != "" ]; then
