@@ -11,6 +11,20 @@
 *	Edit this section
 *
 * ======================================================= */
+.ribbon {
+  width: 25% !important;
+}
+.row {
+  flex-direction: row !important;
+}
+@media (max-width: 800px) {
+  .ribbon {
+    width: 75% !important;
+  }
+  .row {
+    flex-direction: column !important;
+  }
+}
 body {
   font-family: "Karla", Arial, sans-serif;
   line-height: 1.8;

@@ -12,6 +12,7 @@ import { ItemComponent } from './pages/item/item.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchComponent } from './pages/search/search.component';
 import { MainComponent } from './pages/main/main.component';
+import { FeedComponent } from './pages/feed/feed.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { MainComponent } from './pages/main/main.component';
     AboutComponent,
     ItemComponent,
     SearchComponent,
-    MainComponent
+    MainComponent,
+    FeedComponent
   ],
   imports: [
     BrowserModule,

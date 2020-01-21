@@ -1,5 +1,5 @@
 <section *ngIf="product">
-  <header style="position: relative;height: auto; min-height: 50vh; background-size: contain;" [ngStyle]="{'background-image': 'url(assets/images/op/' + id + '/main.jpg'}" class="rk-portfolio-cover  item-inside-1">
+  <header style="position: relative;height: auto; min-height: 40vh; background-size: contain;background-repeat: no-repeat;" [ngStyle]="{'background-image': 'url(assets/images/op/' + id + '/main.jpg'}" class="rk-portfolio-cover  item-inside-1">
     <div class="item-inside__meta">
       <h1 class="ae-u-bolder rk-portfolio-title ">{{product.title}}</h1>
       <p class="ae-theta rk-portfolio-category ">{{product.type}}</p>
@@ -26,16 +26,16 @@
   </div>
   <div  style="position: relative;" class="ae-container-fluid ae-container-fluid--inner rk-portfolio--inner">
     <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
-      <div class="ae-grid__item item-lg-5 au-lg-ptp-1">
+      <div class="ae-grid__item item-lg-4 au-lg-ptp-1">
         <h4 class="ae-u-bolder">{{product.subtitle}}</h4>
         <p class="ae-eta">{{product.description1}}</p>
       </div>
-      <div class="ae-grid__item item-lg-6 item-lg--offset-1"><img src="assets/images/op/{{id}}/pic-1.jpg" alt="Urku Portfolio"></div>
+      <div class="ae-grid__item item-lg-7 item-lg--offset-1"><img src="assets/images/op/{{id}}/pic-1.jpg" alt="Urku Portfolio"></div>
     </div>
     <div class="ae-grid ae-grid--collapse">
-      <div class="ae-grid__item item-lg-8"><img src="assets/images/op/{{id}}/pic-2.jpg" alt="Urku Portfolio"></div>
-      <div class="ae-grid__item item-lg-3 item-lg--offset-1 au-lg-ptp-1">
-        <p>{{product.description2}}</p>
+      <div class="ae-grid__item item-lg-7"><img src="assets/images/op/{{id}}/pic-2.jpg" alt="Urku Portfolio"></div>
+      <div class="ae-grid__item item-lg-4 item-lg--offset-1 au-lg-ptp-1">
+        <p class="ae-eta" [innerHTML]="product.description2"></p>
       </div>
     </div>
   </div>
