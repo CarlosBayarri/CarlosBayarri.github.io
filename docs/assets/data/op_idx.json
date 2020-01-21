@@ -13,5 +13,10 @@
         "type": "Code",
         "cod": "op-3",
         "title": "Angular Portfolio"
+    },
+    {
+        "type": "Code",
+        "cod": "op-4",
+        "title": "Angular Documentation with Compodoc"
     }
 ]
