@@ -1,4 +1,4 @@
-<header class="ae-container-fluid ae-container-fluid--full rk-header ">
+<header class="ae-container-fluid ae-container-fluid--full rk-header">
   <input type="checkbox" id="mobile-menu" class="rk-mobile-menu">
   <label for="mobile-menu">
     <svg>
@@ -12,12 +12,14 @@
     </svg>
   </label>
   <div class="ae-container-fluid rk-topbar">
-    <h1 class="rk-logo"><a routerLink="">{{infoService.info.title}}<sup>tm</sup></a></h1>
+    <h1 class="rk-logo"><a routerLink="">{{infoService.info.title}}</a></h1> <!--<sup>tm</sup>-->
     <nav class="rk-navigation">
       <ul class="rk-menu">
-        <li routerLinkActive="active" class="rk-menu__item"><a routerLink="home" class="rk-menu__link">Home</a>
+        <li routerLinkActive="active" class="rk-menu__item"><a routerLink="home" class="rk-menu__link" (click)="deactivateMenu()">Home</a>
         </li>
-        <li routerLinkActive="active" class="rk-menu__item"><a routerLink="about" class="rk-menu__link">Contact me</a>
+        <li routerLinkActive="active" class="rk-menu__item"><a routerLink="services" class="rk-menu__link" (click)="deactivateMenu()">Services</a>
+        </li>
+        <li routerLinkActive="active" class="rk-menu__item"><a routerLink="about" class="rk-menu__link" (click)="deactivateMenu()">Contact me</a>
         </li>
       </ul>
     </nav>

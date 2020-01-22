@@ -13,6 +13,9 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
   }
+  deactivateMenu() {
+    document.getElementById('mobile-menu').click();
+  }
   searcProduct(term: string) {
     if (term.length < 1) {
       return;

@@ -17,7 +17,7 @@
     </div>
         
     <div *ngIf="!openprojectService.loading" class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
-      <a *ngFor="let product of openprojectService.products" [routerLink]="['/item',product.cod]" class="animated fadeIn rk-item ae-masonry__item">
+      <a *ngFor="let product of openprojectService.products" [routerLink]="['/item',product.cod]" class="animated fadeIn rk-item ae-masonry__item mat-elevation-z2">
         <img src="assets/images/op/{{product.cod}}/main.jpg" alt="">
         <div class="item-meta">
           <h2>{{product.title}}</h2>

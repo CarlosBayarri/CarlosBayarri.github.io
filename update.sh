@@ -1,6 +1,7 @@
 
 echo "Updateing repo";
 read -p  "What's the commit? " commit;
+sudo ng build --prod;
 sudo git add *;
 echo "commit: $commit issue: $issue";
 if [ "$issue" != "" ]; then

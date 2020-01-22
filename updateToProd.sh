@@ -20,3 +20,7 @@ fi
 sudo git push origin master;
 
 echo "Updated!";
+
+sudo git checkout dev;
+
+echo "Return to dev";

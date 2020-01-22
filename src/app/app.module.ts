@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { SearchComponent } from './pages/search/search.component';
 import { MainComponent } from './pages/main/main.component';
 import { FeedComponent } from './pages/feed/feed.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ServicesComponent } from './pages/services/services.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,12 +25,14 @@ import { FeedComponent } from './pages/feed/feed.component';
     ItemComponent,
     SearchComponent,
     MainComponent,
-    FeedComponent
+    FeedComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [HttpClientModule],
   bootstrap: [AppComponent]
