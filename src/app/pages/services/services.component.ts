@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./services.component.scss']
 })
 export class ServicesComponent implements OnInit {
-  private serviceselected = 0;
+  public serviceselected = 0;
   constructor() { }
 
   ngOnInit() {
