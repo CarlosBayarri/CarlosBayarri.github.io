@@ -1,7 +1,7 @@
 {
     "op-1": {
         "title": "(S)IGNIS",
-        "type": "Code",
+        "type": "AngularJS, Dajngo, Geoserver, Postgis",
         "subtitle": "Fire prevention and management services",
         "description1": "This project is focussed in the development of a fire risk model and a web platform to visualize data related with fires, including the obtained model and allow the user the interaction with it. This project has been thougth as a tool for helping fire prevention and management.",
         "description2": "We use <strong>Django</strong> (Back End) and <strong>AngularJs</strong> (Front end). As a Geographic Information System project, we use <strong>Geoserver</strong> and <strong>PostGIS</strong>.",
@@ -12,7 +12,7 @@
     },
     "op-2": {
         "title": "TMCompanies",
-        "type": "Code",
+        "type": "AngularJS, Material",
         "subtitle": "Relation between companies and Gross Domestic Product in Spain from 2008 to 2017",
         "description1": "The purpose of this project is to collect, develop and analyze statistical data, and construct several suitable representations about this data, explaining a history, what is happened. We want to explain a little part of the business world in Spain along the crisis.",
         "description2": "It is written in <strong>Javascript</strong> with <strong>AngularJs</strong>, using <strong>Material</strong>.",
@@ -23,7 +23,7 @@
     },
     "op-3": {
         "title": "Angular portfolio",
-        "type": "Code",
+        "type": "Angular 8, Firebase",
         "subtitle": "Code example of an Angular portfolio with products.",
         "description1": "Whether you're a UX designer, freelance writer, or photographer, an impressive online portfolio is critical for impressing potential clients, and landing future jobs. A digital portfolio enables you to cultivate and display your very best work -- additionally, if you don't have a ton of prior experience in the industry, a portfolio can help you display your skills and talent with mock projects.",
         "description2": "This project is written in <strong>Angular</strong>, using <strong>Firebase</strong> as real time database. Store and synchronize data with the cloud-based NoSQL database. The data is synchronized with all clients in real time and remains available when the app has no connection.",
@@ -34,12 +34,23 @@
     },
     "op-4": {
         "title": "Angular Documentation with Compodoc",
-        "type": "Code",
+        "type": "Angular 8, Compodoc",
         "subtitle": "Project example to create documentation with compodoc for Angular and Ionic.",
         "description1": "This project uses Compodoc, a useful tool to generate the angular project documentation in seconds. Each component, module, pipe, interface and variables need documentation!",
         "description2": "Compodoc supports all major APIs of <strong>Angular</strong>, no server needed and no sources uploaded online, and the generated pages display very well on mobile, tablet and desktop. The graphics help to understand everything very clearly!",
         "github": "https://github.com/CarlosBayarri/docs-angular",
         "view": "https://carlosbayarri.github.io/docs-angular/",
+        "date": "Jan 2020",
+        "team": "Carlos Bayarri Cebrecos"
+    },
+    "op-5": {
+        "title": "Vote app with Django",
+        "type": "Django, SQLite",
+        "subtitle": "Project example to create a web app to vote with Django.",
+        "description1": "This is a web-based application that enables you to create ranking, rating, and poll voting contests and view the results in real time. Your audience can participate live on their mobile phones, tablets and desktops.",
+        "description2": "The establishment of <strong>Django</strong> helps us to create a strong and consistent BackEnd to manage information from a database to the client. In this example, templates will be rendered with <strong>jinja2</strong> and we use <strong>Bootstrap</strong>.",
+        "github": "https://github.com/CarlosBayarri/basics-django",
+        "view": "https://carlosbayarri.github.io/basics-django",
         "date": "Jan 2020",
         "team": "Carlos Bayarri Cebrecos"
     }
