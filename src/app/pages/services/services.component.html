@@ -23,7 +23,14 @@
         </div>
       </div>
     </div>
-    <div  style="position: relative;" class="ae-container-fluid ae-container-fluid--inner rk-portfolio--inner">
+    <div style="position: relative;padding-top: 15px;display: flex;flex-wrap: wrap;padding: 20px;" class="rk-portfolio--inner">
+      <mat-icon *ngIf="serviceselected === 0" style="position: absolute;margin-top: 30px;margin-left: -30px;">arrow_forward</mat-icon>
+      <a style="margin: 20px; width: 200px; text-align: center;font-weight: 500;" (click)="serviceselected=1" [className]="serviceselected === 1 ? 'mat-elevation-z3' : ''"><mat-card>GRAPHIC DESIGN</mat-card></a>
+      <a style="margin: 20px; width: 200px; text-align: center;font-weight: 500;" (click)="serviceselected=2" [className]="serviceselected === 2 ? 'mat-elevation-z3' : ''"><mat-card>FRONT END DEVELOPMENT</mat-card></a>
+      <a style="margin: 20px; width: 200px; text-align: center;font-weight: 500;" (click)="serviceselected=3" [className]="serviceselected === 3 ? 'mat-elevation-z3' : ''"><mat-card>BACK END DEVELOPMENT</mat-card></a>
+      <a style="margin: 20px; width: 200px; text-align: center;font-weight: 500;" (click)="serviceselected=4" [className]="serviceselected === 4 ? 'mat-elevation-z3' : ''"><mat-card>SERVER MANAGEMENT</mat-card></a>
+    </div>
+    <div  style="position: relative;" class="ae-container-fluid ae-container-fluid--inner rk-portfolio--inner" *ngIf="serviceselected===1">
         <h2>GRAPHIC DESIGN</h2>
       <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
         <div class="ae-grid__item item-lg-4 au-lg-ptp-1">

@@ -9,7 +9,6 @@ import { ProductsService } from './services/products.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'portfolio-angular';
 
   constructor( public infoService: InfoService, public productService: ProductsService) {
 

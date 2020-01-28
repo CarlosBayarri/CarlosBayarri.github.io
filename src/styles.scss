@@ -60,6 +60,10 @@ svg rect{
     height: 200px;
   }
 }
+.top-fixed .rk-header {
+  z-index: 999;
+}
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+p { font-size: 1.225rem;}

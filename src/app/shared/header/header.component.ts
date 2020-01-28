@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 import { InfoService } from 'src/app/services/info.service';
 import { Router } from '@angular/router';
 

@@ -15,14 +15,34 @@
           </svg>
         </div>
     </div>
-        
-    <div *ngIf="!openprojectService.loading" class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
-      <a *ngFor="let product of openprojectService.products" [routerLink]="['/item',product.cod]" class="animated fadeIn rk-item ae-masonry__item mat-elevation-z2">
-        <img src="assets/images/op/{{product.cod}}/main.jpg" alt="">
-        <div class="item-meta">
-          <h2>{{product.title}}</h2>
-          <p>{{product.type}}</p>
-        </div>
-      </a>
+    <div>
+      <button mat-raised-button *ngFor="let eachone of options" style="height: 75px; width: 75px; margin: 5px;" [matTooltip]="eachone"
+      (click)="setTypeProject(eachone)" [ngClass]="valueTypeProject === eachone ? 'mat-elevation-z9' : ''">
+        <img [src]="'assets/images/icons/' + eachone + '.png'" height="75" width="75">
+      </button>
+    </div>
+    <form class="example-form" style="display: none;">
+      <mat-form-field style="width: 100%;">
+        <input type="text" placeholder="Filter of frameworks, languajes, utilities and so on" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto" (keyup.enter)="setTypeProject(myControl.value)">
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option [value]="'none'" (click)="setTypeProject('none')">
+            None
+          </mat-option>
+          <mat-option *ngFor="let option of filteredOptions | async" [value]="option" (click)="setTypeProject(option)">
+            {{option}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </form>
+    <div *ngIf="!openprojectService.loading" class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4" style="margin-top: 15px;">
+      <div *ngFor="let product of openprojectService.products">
+        <a *ngIf="(product.type).includes(valueTypeProject) || valueTypeProject === '' || valueTypeProject === 'none'" [routerLink]="['/item',product.cod]" class="animated fadeIn rk-item ae-masonry__item mat-elevation-z2">
+          <img src="assets/images/op/{{product.cod}}/main.jpg" alt="">
+          <div class="item-meta">
+            <h2>{{product.title}}</h2>
+            <p>{{product.type}}</p>
+          </div>
+        </a>
+      </div>      
     </div>
   </section>

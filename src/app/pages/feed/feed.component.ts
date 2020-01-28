@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import {HttpParams} from "@angular/common/http";
 
 @Component({
@@ -9,7 +8,7 @@ import {HttpParams} from "@angular/common/http";
 })
 export class FeedComponent implements OnInit {
 
-  constructor(public http: HttpClient) { }
+  constructor() { }
 
   ngOnInit() {
 
