@@ -23,5 +23,10 @@
         "type": ["django", "sqlite"],
         "cod": "op-5",
         "title": "Vote app with Django"
+    },
+    {
+        "type": ["angular", "nativescript"],
+        "cod": "op-6",
+        "title": "Native app to buy something!"
     }
 ]

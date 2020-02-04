@@ -53,5 +53,16 @@
         "view": "https://carlosbayarri.github.io/basics-django",
         "date": "Jan 2020",
         "team": "Carlos Bayarri Cebrecos"
+    },
+    "op-6": {
+        "title": "Native app to buy something!",
+        "type": "Angular, Nativescript",
+        "subtitle": "Native application example based on Android with differente resources to build a sales application.",
+        "description1": "This application allows you to see the offers people has, and search some product. Each product has a title, description, price and image.",
+        "description2": "<strong>Nativescript</strong> allow us to build native iOS and Android apps using JavaScript. With a listview and a filter, we can create the basis of a sales application!",
+        "github": "https://github.com/CarlosBayarri/native-app",
+        "view": "https://carlosbayarri.github.io/native-app",
+        "date": "Feb 2020",
+        "team": "Carlos Bayarri Cebrecos"
     }
 }

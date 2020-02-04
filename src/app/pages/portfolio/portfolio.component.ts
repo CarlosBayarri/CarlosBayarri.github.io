@@ -11,7 +11,7 @@ import {map, startWith} from 'rxjs/operators';
 })
 export class PortfolioComponent implements OnInit {
   myControl = new FormControl();
-  options: string[] = ['none', 'angular', 'django', 'firebase', 'compodoc', 'geoserver', 'aws', 'd3js', 'ionic', 'nodejs', 'openlayers', 'postgresql', 'reactjs', 'sqlite', 'tensorflow', 'threejs'];
+  options: string[] = ['none', 'angular', 'django', 'firebase', 'compodoc', 'geoserver', 'aws', 'd3js', 'nativescript', 'ionic', 'nodejs', 'openlayers', 'postgresql', 'reactjs', 'sqlite', 'tensorflow', 'threejs'];
   private valueTypeProject = '';
   filteredOptions: Observable<string[]>;
   constructor(public openprojectService: OpenprojectsService) { }
