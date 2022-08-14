@@ -9,8 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "update": "./update.sh",
-    "updateToProd": "./updateToProd.sh",
-    "deploy": "ng build --prod --base-href=/CarlosBayarri.github.io/"
+    "updateToProd": "./updateToProd.sh"
   },
   "private": true,
   "dependencies": {
