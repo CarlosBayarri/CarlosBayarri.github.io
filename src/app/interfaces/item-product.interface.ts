@@ -1,9 +1,11 @@
 export interface ItemProduct {
-    categoria: string;
-    desc1: string;
-    desc2: string;
-    producto: string;
-    resumen: string;
-    subtitulo1: string;
-    subtitulo2: string;
+  title: string;
+  type: string;
+  subtitle: string;
+  team: string;
+  date: string;
+  github: string;
+  view: string;
+  description1: string;
+  description2: string;
 }
