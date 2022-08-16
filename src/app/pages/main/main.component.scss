@@ -1,0 +1,53 @@
+
+.ribbon {
+    width: 25%;
+    font-size: 12px;
+    position: relative;
+    background-color: #333333;
+    text-align: center;
+    color: #ecf0f1;
+    letter-spacing: 1px;
+    padding: 0.75em;
+    margin: 2em auto 3em;
+  }
+  
+  .ribbon:before, .ribbon:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -.99em;
+    border: 1.5em solid darken(#333333, 10%);
+    z-index: -1;
+  }
+  
+  .ribbon:before {
+    left: -1.7em;
+    border-right-width: 1.2em;
+    border-left-color: transparent;
+  }
+  
+  .ribbon:after {
+   right: -2.03em;
+   border-left-width: 1.5em;
+   border-right-color: transparent;
+  }
+  
+  .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-color: darken(#333333, 20%) transparent transparent transparent;
+    bottom: -1em;
+  }
+  
+  .ribbon .ribbon-content:before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+  }
+  
+  .ribbon .ribbon-content:after {
+    right: 0;
+    border-width: 1em 1em 0 0;
+  }
+  
+  
