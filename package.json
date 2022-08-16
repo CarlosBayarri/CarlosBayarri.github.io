@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "update": "./update.sh",
     "updateToProd": "./updateToProd.sh",
-    "deploy": "ng build --prod --base-href=/CarlosBayarri.github.io/"
+    "deploy": "ng build --base-href=/CarlosBayarri.github.io/"
   },
   "private": true,
   "dependencies": {
